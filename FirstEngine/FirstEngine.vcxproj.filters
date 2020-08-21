@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="FastDelegate">
+      <UniqueIdentifier>{d6decb8f-1571-4548-84a9-80a401aa1981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{b9cd9980-9db6-4cad-b260-247450125ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TinyXml">
+      <UniqueIdentifier>{ab180888-bc20-4563-9c59-881906fcacbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GZip">
+      <UniqueIdentifier>{6fec1642-a1e0-4dac-80a4-c5c5d28e40db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{0351976e-9049-4bb1-a844-fcc38444f67f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TinyObjLoader">
+      <UniqueIdentifier>{5bda17e4-ed69-4690-928c-05d16926ddad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{0d737dde-e65c-41a4-9537-7adc6c200b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawable">
+      <UniqueIdentifier>{5e95e72d-85ca-40dd-b6ab-cee76e61e4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bindable">
+      <UniqueIdentifier>{841672f8-22e4-40ac-8a27-0b28734a783b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{155850fa-c5e9-4d58-b4ac-d745143cbb97}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FastDelegate.h">
+      <Filter>FastDelegate</Filter>
+    </ClInclude>
+    <ClInclude Include="FastDelegateBind.h">
+      <Filter>FastDelegate</Filter>
+    </ClInclude>
+    <ClInclude Include="tinystr.h">
+      <Filter>TinyXml</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml.h">
+      <Filter>TinyXml</Filter>
+    </ClInclude>
+    <ClInclude Include="stringUtility.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="memoryUtility.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="crc32.h">
+      <Filter>GZip</Filter>
+    </ClInclude>
+    <ClInclude Include="deflate.h">
+      <Filter>GZip</Filter>
+    </ClInclude>
+    <ClInclude Include="gzguts.h">
+      <Filter>GZip</Filter>
+    </ClInclude>
+    <ClInclude Include="inffast.h">
+      <Filter>GZip</Filter>
+    </ClInclude>
+    <ClInclude Include="inffixed.h">
+      <Filter>GZip</Filter>
+    </ClInclude>
+    <ClInclude Include="inflate.h">
+      <Filter>GZip</Filter>
+    </ClInclude>
+    <ClInclude Include="inftrees.h">
+      <Filter>GZip</Filter>
+    </ClInclude>
+    <ClInclude Include="trees.h">
+      <Filter>GZip</Filter>
+    </ClInclude>
+    <ClInclude Include="zconf.h">
+      <Filter>GZip</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib.h">
+      <Filter>GZip</Filter>
+    </ClInclude>
+    <ClInclude Include="zutil.h">
+      <Filter>GZip</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemClass.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTimer.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="InputClass.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineOptions.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsClass.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DClass.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureClass.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureHolder.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureShaderClass.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraClass.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="DxException.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorIntegers.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelClass.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GDIPlusManager.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="tiny_obj_loader.h">
+      <Filter>TinyObjLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexedTriangleList.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBuffer.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="cbPerObject.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="InputLayout.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelShader.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Topology.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderResource.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene1.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxObj.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="SamplerState.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryGenerator.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="DDSTextureLoader.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Sky.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthStencilState.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="RasterizerState.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Planet.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLight.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotLight.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBufferPerObject.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexConstantBufferPO.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelConstantBufferPO.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="cbPerFrame.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBufferPerFrame.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelConstantBufferPF.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexConstantBufferPF.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonCrate.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Ship.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Clouds.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="BlendState.h">
+      <Filter>Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene2.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="CryoRoom.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="CryoCapsule.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="RadioCamera.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="SpikeCamera.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Ring.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="SpikeRing.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C1.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C2.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="C3.h">
+      <Filter>Drawable</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="tinystr.cpp">
+      <Filter>TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml.cpp">
+      <Filter>TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlerror.cpp">
+      <Filter>TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlparser.cpp">
+      <Filter>TinyXml</Filter>
+    </ClCompile>
+    <ClCompile Include="stringUtility.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="adler32.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="compress.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="crc32.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="deflate.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzclose.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzlib.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzread.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzwrite.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="infback.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="inffast.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="inflate.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="inftrees.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="trees.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="uncompr.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="zutil.c">
+      <Filter>GZip</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTimer.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="InputClass.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemClass.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineOptions.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DClass.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsClass.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureClass.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureHolder.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureShaderClass.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraClass.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DxException.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelClass.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GDIPlusManager.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="tiny_obj_loader.cpp">
+      <Filter>TinyObjLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBuffer.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="InputLayout.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="PixelShader.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Topology.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBuffer.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexShader.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderResource.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene1.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxObj.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="SamplerState.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryGenerator.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DDSTextureLoader.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Sky.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthStencilState.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="RasterizerState.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Planet.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstantBufferPerObject.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexConstantBufferPO.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="PixelConstantBufferPO.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstantBufferPerFrame.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="PixelConstantBufferPF.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexConstantBufferPF.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonCrate.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Ship.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Clouds.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="BlendState.cpp">
+      <Filter>Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene2.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="CryoRoom.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="CryoCapsule.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="RadioCamera.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="SpikeCamera.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Ring.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="SpikeRing.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C1.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C2.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="C3.cpp">
+      <Filter>Drawable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BasicColorPixelShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="BasicColorVertexShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="BasicTexturePixelShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="BasicTextureVertexShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="stone01.tga">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="stone02.tga">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="EngineOptions.xml">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="box1.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="box1.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="10.dds">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="SkyPixelShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="SkyVertexShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="2k_earth_daymap.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="2k_earth_specular_map.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="PhongTexurePixelShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="PhongTexureVertexShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="2k_earth_normal_map.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="NormalMapPixelShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="NormalMapVertexShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="D.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="MoonCrate.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="MoonCrate.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="BasicNormalMapPixelShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="BasicNormalMapVertexShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="BasicPhongColorPixelShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="BasicPhongColorVertexShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="sheep.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="sheep.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="2k_earth_clouds.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="AlphaPhongTextureVertexShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="AlphaPhongTexturePixelShader.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Bridge1.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="Bridge1.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="cryo8_2.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="cryo8_2.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="cryoRoom5.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="cryoRoom5.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="metal-ventilation1-albedo.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="metal-ventilation1-normal-ogl.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="radioCamera3.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="radioCamera3.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="ring3.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="ring3.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="ring4.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="ring4.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="spikeCamera2.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="spikeCamera2.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="vented-metal-panel1_albedo.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="vented-metal-panel1_normal-ogl.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="BasicPhongColorPixelShader2.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="BasicPhongColorVertexShader2.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="greasy-metal-pan1-albedo.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="greasy-metal-pan1-normal.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="NormalMapPixelShader2.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="NormalMapVertexShader2.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="TLFN_-_06_Make_it_work.mp3">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="c1.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="c1.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="c2.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="c2.obj">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="c3.mtl">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="c3.obj">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>
