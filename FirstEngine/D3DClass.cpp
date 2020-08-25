@@ -161,7 +161,7 @@ bool D3DClass::Initialize(const EngineOptions& options, HWND hwnd) {
 	);
 
 	if (featureLevel != D3D_FEATURE_LEVEL_11_0) {
-		MessageBox(0, L"Direct3D Feature Level 11 unsupported.", 0, 0);
+		MessageBoxW(0, L"Direct3D Feature Level 11 unsupported.", 0, 0);
 		return false;
 	}
 

@@ -24,7 +24,7 @@ bool GraphicsClass::Initialize(const EngineOptions& options, HWND hwnd) {
 	// Initialize the Direct3D object.
 	result = m_Direct3D->Initialize(options, hwnd);
 	if (!result) {
-		MessageBox(hwnd, L"Could not initialize Direct3D", L"Error", MB_OK);
+		MessageBoxW(hwnd, L"Could not initialize Direct3D", L"Error", MB_OK);
 		return false;
 	}
 
@@ -37,7 +37,7 @@ bool GraphicsClass::Initialize(const EngineOptions& options, HWND hwnd) {
 	std::vector<std::string> textures{ "stone01.tga", "stone02.tga", "2k_earth_daymap.bmp", "2k_earth_specular_map.bmp", "2k_earth_normal_map.bmp", "D.bmp", "2k_earth_clouds.bmp", "greasy-metal-pan1-albedo.bmp", "greasy-metal-pan1-normal.bmp", "vented-metal-panel1_albedo.bmp", "vented-metal-panel1_normal-ogl.bmp", "metal-ventilation1-albedo.bmp", "metal-ventilation1-normal-ogl.bmp" };
 	result = m_TextureHolder->Initialize(m_Direct3D->GetDevice(), m_Direct3D->GetDeviceContext(), textures);
 	if (!result) {
-		MessageBox(hwnd, L"Could not initialize the textures.", L"Error", MB_OK);
+		MessageBoxW(hwnd, L"Could not initialize the textures.", L"Error", MB_OK);
 		return false;
 	}
 
