@@ -47,10 +47,10 @@ bool SystemClass::Initialize() {
 
 	LPCWSTR a = L"open TLFN_-_06_Make_it_work.mp3 type mpegvideo";
 	int error = 99;
-	error = mciSendString(a, NULL, 0, 0);
+	error = mciSendStringW(a, NULL, 0, 0);
 	int error2;
 	LPCWSTR b = L"play TLFN_-_06_Make_it_work.mp3";
-	error2 = mciSendString(b, NULL, 0, 0);
+	error2 = mciSendStringW(b, NULL, 0, 0);
 
 	return true;
 }
@@ -338,23 +338,24 @@ bool SystemClass::InitializeWindows() {
 	m_hinstance = GetModuleHandle(NULL);
 
 	// Setup the windows class with default settings.
-	WNDCLASSEX wc;
-	wc.style = CS_HREDRAW | CS_VREDRAW | CS_OWNDC;
-	wc.lpfnWndProc = WndProc;
+	WNDCLASSEX wc = { 0 };
+	wc.cbSize = sizeof(wc);
+	wc.style = CS_OWNDC | CS_VREDRAW | CS_HREDRAW;
+	wc.lpfnWndProc = &DefWindowProc;
 	wc.cbClsExtra = 0;
 	wc.cbWndExtra = 0;
 	wc.hInstance = m_hinstance;
 	wc.hIcon = LoadIcon(NULL, IDI_WINLOGO);
-	wc.hIconSm = wc.hIcon;
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
-	wc.hbrBackground = (HBRUSH)GetStockObject(BLACK_BRUSH);
+	wc.hbrBackground = NULL;
 	wc.lpszMenuName = NULL;
-	wc.lpszClassName = m_applicationName;
-	wc.cbSize = sizeof(WNDCLASSEX);
+	wc.lpszClassName = (LPCSTR)m_applicationName;
+	wc.hIconSm = NULL;
+
 
 	// Register the window class.
 	if (!RegisterClassEx(&wc)) {
-		MessageBox(0, L"RegisterClass Failed.", 0, 0);
+		MessageBoxW(0, L"RegisterClass Failed.", 0, 0);
 		return false;
 	}
 
@@ -394,24 +395,24 @@ bool SystemClass::InitializeWindows() {
 	}
 
 	// Create the window with the screen settings and get the handle to it.
-	m_hwnd = CreateWindowEx(
-		WS_EX_APPWINDOW,
+	m_hwnd = CreateWindowExW(
+		0,
 		m_applicationName,
 		m_applicationName,
-		//WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_POPUP, // окно без рамки
-		WS_OVERLAPPEDWINDOW,
-		posX,
-		posY,
+		//WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_POPUP, // пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		WS_POPUP | WS_VISIBLE,
+		0,
+		0,
 		screenWidth,
 		screenHeight,
 		NULL,
 		NULL,
 		m_hinstance,
-		NULL
+		0
 	);
 
 	if (!m_hwnd) {
-		MessageBox(0, L"CreateWindow Failed.", 0, 0);
+		MessageBoxW(0, L"CreateWindow Failed.", 0, 0);
 		return false;
 	}
 
@@ -421,7 +422,7 @@ bool SystemClass::InitializeWindows() {
 	SetFocus(m_hwnd);
 
 	// Hide the mouse cursor.
-	//ShowCursor(false);
+	ShowCursor(false);
 
 	return true;
 }
@@ -440,7 +441,7 @@ void SystemClass::ShutdownWindows() {
 	m_hwnd = NULL;
 
 	// Remove the application instance.
-	UnregisterClass(m_applicationName, m_hinstance);
+	UnregisterClassW(m_applicationName, m_hinstance);
 	m_hinstance = NULL;
 
 	// Release the pointer to this class.

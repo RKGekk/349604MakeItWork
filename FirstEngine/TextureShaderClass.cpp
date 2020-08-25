@@ -63,7 +63,7 @@ bool TextureShaderClass::InitializeShader(ID3D11Device* device, HWND hwnd, LPCWS
 		}
 		// If there was nothing in the error message then it simply could not find the shader file itself.
 		else {
-			MessageBox(hwnd, vsFilename, L"Missing Shader File", MB_OK);
+			MessageBoxW(hwnd, vsFilename, L"Missing Shader File", MB_OK);
 		}
 
 		return false;
@@ -88,7 +88,7 @@ bool TextureShaderClass::InitializeShader(ID3D11Device* device, HWND hwnd, LPCWS
 		}
 		// If there was nothing in the error message then it simply could not find the file itself.
 		else {
-			MessageBox(hwnd, psFilename, L"Missing Shader File", MB_OK);
+			MessageBoxW(hwnd, psFilename, L"Missing Shader File", MB_OK);
 		}
 
 		return false;
@@ -206,7 +206,7 @@ void TextureShaderClass::OutputShaderErrorMessage(ID3D10Blob* errorMessage, HWND
 	errorMessage = 0;
 
 	// Pop a message up on the screen to notify the user to check the text file for compile errors.
-	MessageBox(hwnd, L"Error compiling shader.  Check shader-error.txt for message.", shaderFilename, MB_OK);
+	MessageBoxW(hwnd, L"Error compiling shader.  Check shader-error.txt for message.", shaderFilename, MB_OK);
 
 	return;
 }
